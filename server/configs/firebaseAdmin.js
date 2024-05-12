@@ -1,8 +1,8 @@
 // firebaseAdmin.js
-import admin from "firebase-admin";
+import admin from 'firebase-admin';
 
 if (!admin.apps.length) {
-  const serviceAccount = require("./foodyapp-51b6e-firebase-adminsdk-1f971-aef5cf5866.json"); // Replace with your own path
+  const serviceAccount = require('./food-delivery-app-0-firebase-adminsdk-giipn-f81ee580d3.json');
 
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
